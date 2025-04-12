@@ -253,6 +253,9 @@ button {
   display: block;
   fill: #2f2f37;
 }
+.team-list {
+  justify-content: center;
+}
 .mob-menu-list {
   margin-bottom: 24px;
 }
