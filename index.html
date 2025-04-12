@@ -84,9 +84,11 @@
             </li>
           </ul>
         </address>
+        <!-- mobile-menu -->
         <button
           type="button"
           class="menu-open-btn"
+          data-menu-open
         >
           <svg
             class="menu-open-icon"
@@ -97,13 +99,17 @@
           </svg>
         </button>
       </div>
-      <!-- mobile-menu -->
-      <div class="mob-menu">
+
+      <div
+        class="mob-menu"
+        data-menu
+      >
         <!-- <div class="mob-menu is-open"> -->
         <div>
           <button
             type="button"
             class="menu-close-btn"
+            data-menu-close
           >
             <svg
               class="menu-open-icon"
@@ -158,6 +164,7 @@
               </li>
             </ul>
           </address>
+          <!-- x -->
           <ul class="mob-social-list">
             <li class="mob-social-item">
               <a
@@ -227,6 +234,7 @@
           <button
             class="hero-btn"
             type="button"
+            data-modal-open
           >
             Order Service
           </button>
@@ -990,11 +998,16 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <!-- modal -->
+    <div
+      class="backdrop"
+      data-modal
+    >
       <div class="modal">
         <button
           type="button"
           class="modal-close-btn"
+          data-modal-close
         >
           <svg
             class="modal-close-icon"
@@ -1052,7 +1065,7 @@
           </div>
           <div class="modal-field">
             <label
-              for="user-name"
+              for="user-email"
               class="modal-label"
               >Email</label
             >
@@ -1096,7 +1109,8 @@
             <label
               for="user-privacy"
               class="modal-check-text"
-              ><span class="modal-check-span">
+            >
+              <span class="modal-check-span">
                 <svg
                   class="modal-check-icon"
                   width="10"
@@ -1124,5 +1138,7 @@
         </form>
       </div>
     </div>
+    <script src="./ebyss.js/modal.js"></script>
+    <script src="./ebyss.js/menu.js"></script>
   </body>
 </html>
